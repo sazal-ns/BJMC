@@ -1,0 +1,667 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.ns.siddiqui.sazal.bjmc_v20.PurchaseActivity"
+    tools:showIn="@layout/activity_purchase"
+    android:id="@+id/scrollData">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/tableView">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/margin_5dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_5dp"
+                    tools:ignore="RtlHardcoded"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:text="Quality"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/qualityTextView"
+                        android:textSize="@dimen/textSizeAll"
+                        android:textStyle="bold"
+                        android:paddingLeft="@dimen/margin_5dp"
+                        tools:ignore="RtlSymmetry" />
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/qualitySpinner"
+                        android:padding="@dimen/margin_5dp"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_5dp"
+                    tools:ignore="RtlHardcoded"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:text="Bill No"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/billNoTextView"
+                        android:textSize="@dimen/textSizeAll"
+                        android:textStyle="bold"
+                        android:paddingLeft="@dimen/margin_5dp"
+                        tools:ignore="RtlSymmetry" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="number"
+                        android:hint="Bill No"
+                        android:ems="10"
+                        android:id="@+id/billNoEditText"
+                        android:background="@drawable/edit_text_bg"
+                        android:padding="@dimen/margin_5dp"/>
+                </LinearLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/margin_5dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_5dp"
+                    tools:ignore="RtlHardcoded"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:text="Supplier"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/supplierTextView"
+                        android:textSize="@dimen/textSizeAll"
+                        android:textStyle="bold"
+                        android:paddingLeft="@dimen/margin_5dp"
+                        tools:ignore="RtlSymmetry" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="none"
+                        android:hint="Click for Supplier"
+                        android:ems="10"
+                        android:id="@+id/supplierEditText"
+                        android:background="@drawable/edit_text_bg"
+                        android:padding="@dimen/margin_5dp"
+                        android:editable="false"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_5dp"
+                    tools:ignore="RtlHardcoded"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:text="Supplier Code"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/supplierCodeTextView"
+                        android:textSize="@dimen/textSizeAll"
+                        android:textStyle="bold"
+                        android:paddingLeft="@dimen/margin_5dp"
+                        tools:ignore="RtlSymmetry" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="none"
+                        android:hint="Supplier Code"
+                        android:ems="10"
+                        android:id="@+id/supplierCodeEditText"
+                        android:background="@drawable/edit_text_bg"
+                        android:padding="@dimen/margin_5dp"
+                        android:editable="false"/>
+                </LinearLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/margin_5dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_5dp"
+                    tools:ignore="RtlHardcoded"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:text="Licence No"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/licenceNoTextView"
+                        android:textSize="@dimen/textSizeAll"
+                        android:textStyle="bold"
+                        android:paddingLeft="@dimen/margin_5dp"
+                        tools:ignore="RtlSymmetry" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="none"
+                        android:hint="Licence No"
+                        android:ems="10"
+                        android:id="@+id/licenceNoEditText"
+                        android:background="@drawable/edit_text_bg"
+                        android:padding="@dimen/margin_5dp"
+                        android:editable="false"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_5dp"
+                    tools:ignore="RtlHardcoded"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:text="P/O"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/poTextView"
+                        android:textSize="@dimen/textSizeAll"
+                        android:textStyle="bold"
+                        android:paddingLeft="@dimen/margin_5dp"
+                        tools:ignore="RtlSymmetry" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="none"
+                        android:hint="P/O"
+                        android:ems="10"
+                        android:id="@+id/poEditText"
+                        android:background="@drawable/edit_text_bg"
+                        android:padding="@dimen/margin_5dp"
+                        android:editable="false"/>
+                </LinearLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/margin_5dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_5dp"
+                    tools:ignore="RtlHardcoded"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:text="P/S"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/psTextView"
+                        android:textSize="@dimen/textSizeAll"
+                        android:textStyle="bold"
+                        android:paddingLeft="@dimen/margin_5dp"
+                        tools:ignore="RtlSymmetry" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="none"
+                        android:hint="P/S"
+                        android:ems="10"
+                        android:id="@+id/psEditText"
+                        android:background="@drawable/edit_text_bg"
+                        android:padding="@dimen/margin_5dp"
+                        android:editable="false"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_5dp"
+                    tools:ignore="RtlHardcoded"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:text="Dist"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/distTextView"
+                        android:textSize="@dimen/textSizeAll"
+                        android:textStyle="bold"
+                        android:paddingLeft="@dimen/margin_5dp"
+                        tools:ignore="RtlSymmetry" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="none"
+                        android:hint="Dist"
+                        android:ems="10"
+                        android:id="@+id/distEditText"
+                        android:background="@drawable/edit_text_bg"
+                        android:padding="@dimen/margin_5dp"
+                        android:editable="false"/>
+                </LinearLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/margin_5dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_5dp"
+                    tools:ignore="RtlHardcoded"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:text="Quantity Tender"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/quantityTenderTextView"
+                        android:textSize="@dimen/textSizeAll"
+                        android:textStyle="bold"
+                        android:paddingLeft="@dimen/margin_5dp"
+                        tools:ignore="RtlSymmetry" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="number"
+                        android:hint="100"
+                        android:ems="10"
+                        android:id="@+id/quantityTenderEditText"
+                        android:background="@drawable/edit_text_bg"
+                        android:padding="@dimen/margin_5dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_5dp"
+                    tools:ignore="RtlHardcoded"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:text="Lot"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/lotTextView"
+                        android:textSize="@dimen/textSizeAll"
+                        android:textStyle="bold"
+                        android:paddingLeft="@dimen/margin_5dp"
+                        tools:ignore="RtlSymmetry" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="number"
+                        android:hint="100"
+                        android:ems="10"
+                        android:id="@+id/lotEditText"
+                        android:background="@drawable/edit_text_bg"
+                        android:padding="@dimen/margin_5dp"/>
+                </LinearLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/margin_5dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_5dp"
+                    tools:ignore="RtlHardcoded"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:text="Trans Mode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/transModeTextView"
+                        android:textSize="@dimen/textSizeAll"
+                        android:textStyle="bold"
+                        android:paddingLeft="@dimen/margin_5dp"
+                        tools:ignore="RtlSymmetry" />
+
+                    <AutoCompleteTextView
+                        android:hint="Trans Mode"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/transModeEditText"
+                        android:background="@drawable/edit_text_bg"
+                        android:padding="@dimen/margin_5dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_5dp"
+                    tools:ignore="RtlHardcoded"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:text="Driver Mobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/driverMobileTextView"
+                        android:textSize="@dimen/textSizeAll"
+                        android:textStyle="bold"
+                        android:paddingLeft="@dimen/margin_5dp"
+                        tools:ignore="RtlSymmetry" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="phone"
+                        android:hint="0191000000"
+                        android:ems="10"
+                        android:id="@+id/driverMobileEditText"
+                        android:background="@drawable/edit_text_bg"
+                        android:padding="@dimen/margin_5dp"/>
+                </LinearLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/margin_5dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_5dp"
+                    tools:ignore="RtlHardcoded"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:text="Import Date Time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/importDateTimeTextView"
+                        android:textSize="@dimen/textSizeAll"
+                        android:textStyle="bold"
+                        android:paddingLeft="@dimen/margin_5dp"
+                        tools:ignore="RtlSymmetry" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="none"
+                        android:hint="12/04/2016 12:00 am"
+                        android:ems="10"
+                        android:id="@+id/importDateTimeEditText"
+                        android:background="@drawable/edit_text_bg"
+                        android:padding="@dimen/margin_5dp"
+                        android:editable="false"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_5dp"
+                    tools:ignore="RtlHardcoded"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:text="Unload Date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/unloadDateTextView"
+                        android:textSize="@dimen/textSizeAll"
+                        android:textStyle="bold"
+                        android:paddingLeft="@dimen/margin_5dp"
+                        tools:ignore="RtlSymmetry" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="none"
+                        android:hint="12/04/2016"
+                        android:ems="10"
+                        android:id="@+id/unloadDateEditText"
+                        android:background="@drawable/edit_text_bg"
+                        android:padding="@dimen/margin_5dp"
+                        android:editable="false"/>
+                </LinearLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/margin_5dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_5dp"
+                    tools:ignore="RtlHardcoded"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:text="Moisture"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/moistureTextView"
+                        android:textSize="@dimen/textSizeAll"
+                        android:textStyle="bold"
+                        android:paddingLeft="@dimen/margin_5dp"
+                        tools:ignore="RtlSymmetry" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="number"
+                        android:hint="1"
+                        android:ems="10"
+                        android:id="@+id/moistureTimeEditText"
+                        android:background="@drawable/edit_text_bg"
+                        android:padding="@dimen/margin_5dp"/>
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_5dp"
+                    tools:ignore="RtlHardcoded"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:text="Basis Rate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/basisRateTextView"
+                        android:textSize="@dimen/textSizeAll"
+                        android:textStyle="bold"
+                        android:paddingLeft="@dimen/margin_5dp"
+                        tools:ignore="RtlSymmetry" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="number"
+                        android:hint="1000"
+                        android:ems="10"
+                        android:id="@+id/basisRateEditText"
+                        android:background="@drawable/edit_text_bg"
+                        android:padding="@dimen/margin_5dp"/>
+                </LinearLayout>
+
+            </TableRow>
+
+        </TableLayout>
+
+        <include layout="@layout/quantity_sub_head" />
+        <include layout="@layout/quantity_sub_body"/>
+        <include layout="@layout/actual_quantity_head"/>
+        <include layout="@layout/actual_quantity_body"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/margin_5dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_5dp"
+                    tools:ignore="RtlHardcoded"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:text="Sattled Rate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/sattledRateTextView"
+                        android:textSize="@dimen/textSizeAll"
+                        android:textStyle="bold"
+                        android:paddingLeft="@dimen/margin_5dp"
+                        tools:ignore="RtlSymmetry" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="none"
+                        android:ems="10"
+                        android:id="@+id/sattledRateEditText"
+                        android:background="@drawable/edit_text_bg"
+                        android:padding="@dimen/margin_5dp"
+                        android:editable="false"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_5dp"
+                    tools:ignore="RtlHardcoded"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:text="Total Value"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/totalValueTextView"
+                        android:textSize="@dimen/textSizeAll"
+                        android:textStyle="bold"
+                        android:paddingLeft="@dimen/margin_5dp"
+                        tools:ignore="RtlSymmetry" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="none"
+                        android:ems="10"
+                        android:id="@+id/totalValueEditText"
+                        android:background="@drawable/edit_text_bg"
+                        android:padding="@dimen/margin_5dp"
+                        android:editable="false"/>
+                </LinearLayout>
+
+            </TableRow>
+
+        </TableLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+            <Button
+                android:text="Save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/saveButton"
+                android:layout_weight="1"
+                android:background="@android:color/holo_blue_dark"/>
+
+
+            <Button
+                android:text="Calculate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/calculateButton"
+                android:layout_weight="1"
+                android:background="@android:color/holo_blue_light"/>
+            <Button
+                android:text="Save &amp; Approved"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/saveApprovedButton"
+                android:layout_weight="1"
+                android:background="@android:color/holo_blue_dark"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</android.support.v4.widget.NestedScrollView>

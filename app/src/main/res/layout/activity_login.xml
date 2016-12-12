@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.ns.siddiqui.sazal.bjmc_v20.LoginActivity">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        app:srcCompat="@drawable/world_tech_logo"
+        android:id="@+id/wtLogo"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:text="Online Jute Purchases System"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textColor="#0352a5"
+        android:textStyle="bold|italic"
+        android:layout_marginTop="15dp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:padding="20dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="User Name"
+            android:drawableLeft="@drawable/ic_registration_username"
+            android:padding="10dp"
+            android:ems="10"
+            android:id="@+id/userNameEditText"
+            android:background="@drawable/edit_text_bg"
+            android:textCursorDrawable="@android:color/black"
+            android:imeOptions="actionNext"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:padding="10dp"
+            android:drawableLeft="@drawable/ic_registration_password"
+            android:hint="Password"
+            android:id="@+id/passwordEditText"
+            android:background="@drawable/edit_text_bg"
+            android:layout_marginTop="5dp"
+            android:textCursorDrawable="@android:color/black"
+            android:imeOptions="actionDone"/>
+
+
+    </LinearLayout>
+
+    <Button
+        android:text="Login"
+        android:textColor="#ffffff"
+        android:background="@android:color/holo_blue_dark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/loginButton"
+        android:layout_marginTop="20dp"
+        android:textAllCaps="true"/>
+
+</LinearLayout>

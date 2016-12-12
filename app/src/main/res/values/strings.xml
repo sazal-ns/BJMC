@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">BJMC</string>
+    <string name="title_activity_purchase">Jute Purchase</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="listarray">
+        <item>Select One</item>
+        <item>Item One</item>
+        <item>Item Two</item>
+        <item>Item Three</item>
+    </string-array>
+</resources>

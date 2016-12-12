@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/qsbody">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/qbsInto">
+
+        <TextView
+            android:text="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/slTextView"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textSize="@dimen/textSizeAll"
+            android:padding="@dimen/margin_5dp"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="5"
+            android:id="@+id/quintalEditText"
+            android:layout_weight="1"
+            android:background="@drawable/edit_text_bg"
+            android:singleLine="true"
+            android:padding="@dimen/margin_5dp"
+            android:layout_marginLeft="@dimen/margin_5dp"
+            tools:ignore="RtlHardcoded" />
+
+        <EditText
+            android:background="@drawable/edit_text_bg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/kgEditText"
+            android:layout_weight="1"
+            android:inputType="none"
+            android:editable="false"
+            android:padding="@dimen/margin_5dp"
+            android:layout_marginRight="5dp"
+            tools:ignore="RtlHardcoded" />
+
+        <Button
+            android:text="X"
+            android:textStyle="bold"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:id="@+id/addButton"
+            android:layout_weight="1"
+            android:padding="@dimen/margin_5dp"
+            android:background="@drawable/button_color"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/qsbnewCommer"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/qsbLow">
+
+        <TextView
+            android:text="SUM"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView9"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textSize="18dp"
+            android:padding="@dimen/margin_5dp"/>
+
+        <TextView
+            android:text=""
+            android:layout_width="0dp"
+            android:background="@drawable/edit_text_bg"
+            android:layout_height="wrap_content"
+            android:id="@+id/totalQuintalTextView"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:padding="@dimen/margin_5dp"/>
+
+        <TextView
+            android:text=""
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/kgTextView"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:background="@drawable/edit_text_bg"
+            android:padding="@dimen/margin_5dp"/>
+
+        <TextView
+            android:text=""
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/TextView"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:padding="@dimen/margin_5dp"/>
+    </LinearLayout>
+</LinearLayout>
