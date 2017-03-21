@@ -14,7 +14,6 @@ android:
 
     # Additional components
     - android-22
-    - android-24
     - sys-img-armeabi-v7a-android-22
     - extra-android-m2repository
 
