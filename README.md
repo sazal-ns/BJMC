@@ -1,5 +1,5 @@
 # BJMC
-!https://travis-ci.org/sazal-ns/BJMC.svg?branch=master!:https://travis-ci.org/sazal-ns/BJMC
+[![Build Status](https://travis-ci.org/sazal-ns/BJMC.svg?branch=master)](https://travis-ci.org/sazal-ns/BJMC)
 
 Bangladesh Jute Mile Corporation. Testing App A Job Intervew Assigment from World Tech. 
 Completed 90 %.
